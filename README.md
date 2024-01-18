@@ -7,4 +7,4 @@ AC: 19, AL: 39, AP: 27, AM: 38, BA: 141, CE: 120, DF: 704, ES: 71, GO: 98, MA: 3
 
 Total de servidoras (total de mulheres na PFGN): 2169
 
-Total de Servidores de origem AGU com situação funcional EXERC DESCENT CARREI: 241
+Total de Servidores de origem AGU com situação funcional EXERC DESCENT CARREI: 355
