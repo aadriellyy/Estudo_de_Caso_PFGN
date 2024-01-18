@@ -12,7 +12,7 @@ unidade = arquivo_excel['Unidade']
 maxRow = servidores.max_row
 maxColumn = servidores.max_column
 
-#Defininfo o maximo de linhas da planilha unidade
+#Definindo o maximo de linhas da planilha unidade
 maxRowUni = unidade.max_row
 
 #inicializando um dicionario com a sigla de todas as UF'S (feito de forma manual para nao sobrecarregar o tempo de execucao)
