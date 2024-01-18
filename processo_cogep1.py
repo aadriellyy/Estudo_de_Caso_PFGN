@@ -39,15 +39,15 @@ for i in range(1, maxRow +1):
     else:
         man += 1 #caso contrario, como so a duas opcoes nessa planilha, itero a variavel que define a quantidade de homens
 total = man+womens #definindo o total de servidores. isso eh util para definir a porcentagem de mulheres que sao servidoras
-print(f'total de servidores: {total}')
-print(f'mulheres: {womens}')
+print(f'Total de servidores: {total}')
+print(f'Mulheres servidoras: {womens}')
 
 #verificando o total de servidores de origem AGU com situação funcional EXERC DESCENT CARREI
 total_serv = 0 #variavel que define o total de servidores de origem AGU com os criterios da situacao funcional
 for i in range (1, maxRow+1):
-    cell_orig = servidores.cell(row = i, column = 73) #a variavel cell_orig esta armazenando o orgao de origem do servidor
-    cell_func = servidores.cell(row = i, column = 62) #a variavel cell_func esta armazenando a funcao exercida por esse servidor
-    if cell_orig.value == 'AGU' and 'EXERC. DESCENTRALIZADO' in cell_func.value: #verificando se as condicoes sao cumrpidas
+    cell_orig = servidores.cell(row = i, column = 73) #a variavel cell_orig esta armazenando o orgao de origem do servidor (coluna BU)
+    cell_func = servidores.cell(row = i, column = 68) #a variavel cell_func esta armazenando a funcao exercida por esse servidor (coluna BP)
+    if cell_orig.value == 'AGU' and 'EXERC. DESCENT.' in cell_func.value: #verificando se as condicoes sao cumrpidas
         total_serv += 1 #caso sejam, itero o total de servidores
 
-print(total_serv)
+print(f'Servidores de origem AGU com situação funcional EXERC DESCENT CARREI: {total_serv}')
